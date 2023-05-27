@@ -12,13 +12,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.WalletRequest"
         tools:targetApi="31">
         <activity
-            android:name=".CardastroActivity"
+            android:name=".ui.ListActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.CardDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#142995"
-    tools:context=".MainActivity">
+    android:padding="24dp"
+    tools:context=".ui.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -16,32 +17,32 @@
         android:textSize="30sp"
         app:layout_constraintVertical_chainStyle="packed"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btOpenList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/btOpenList"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="meus cartões"
-        android:backgroundTint="#56ECFF"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        android:backgroundTint="#56ECFF"
+        android:text="meus cartões"
+        app:layout_constraintBottom_toTopOf="@+id/btOpenCad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btOpenCad"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="cadastrar cartão"
         android:backgroundTint="#B8FF66"
+        android:text="cadastrar cartão"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btOpenList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
